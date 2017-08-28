@@ -14,8 +14,9 @@ TypeError: unhashable type: 'list'
 That's frustrating.  Let's try it again...
 
 ```python
+>>> from yololist import Yololist as list
 >>> mylist = [1, 2, 3]
->>> my_yololist = Yololist(mylist)
+>>> my_yololist = list(mylist)
 >>> mydict = {}
 >>> mydict[my_yololist] = 'pass'
 >>> # Let's get crazy.
